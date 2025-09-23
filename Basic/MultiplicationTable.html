@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title> Multiplication table </title>
+        <style>
+               table{
+                border-collapse: collapse;
+                width : 10%;
+                height : 50%;
+               }
+               td,th{
+                border : 1px solid black;
+                padding : 8px;
+                text-align : center;
+               }
+               td:hover{
+                background-color : red;
+                color : white;
+               }
+        </style>
+    </head>
+    <body>
+       <h1> Multiplication table </h1>
+       <table id = "table"></table>
+
+       <script>
+              var number = parseInt(prompt("Enter any number : "));
+              var table = document.getElementById("table");
+              
+              for(var i=1; i<=10; i++){
+                var row = table.insertRow();
+                var cell = row.insertCell();   
+                cell.innerHTML = number + "  X  " + i +"  =  "+ (number * i);
+              }
+       </script>
+    </body>
+</html>
