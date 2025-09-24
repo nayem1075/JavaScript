@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title> Loop Practice </title>
+    </head>
+    <body>
+         <h2> For, While, do-while loop with break and continue statement </h2>
+
+        <script>
+
+                for(var i=1; i<=20; i++){
+                    if(i==10){
+                        continue;
+                    }
+                    document.write(i+" ");
+                }
+                document.write("<br/>");
+
+                var j=1;
+                while(j<=20){
+                    if(j==10){
+                        break;
+                    }
+                    document.write(j+" ");
+                    j++;
+                }
+                document.write("<br/>");
+
+                var k=1;
+                do{
+                    if(k==5){
+                        k++;
+                        continue;
+                    }
+                    document.write(k+" ");
+                    k++;
+                }while(k<=20);
+
+        </script>
+    </body>
+</html>
